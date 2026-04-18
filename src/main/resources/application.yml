@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: employee-service
+  datasource:
+    url: jdbc:sqlserver://nk-admin.database.windows.net:1433;database=free-sql-db-9190230;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: nk-admin
+    password: password@2026
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
+
